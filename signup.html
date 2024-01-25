@@ -61,12 +61,38 @@
         button:hover {
             background-color: #555;
         }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .home-button {
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .home-button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Sign Up</h1>
+        <div class="top-bar">
+            <div>
+                <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+            </div>
+        </div>
     </header>
 
     <section>
